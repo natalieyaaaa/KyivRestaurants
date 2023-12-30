@@ -19,6 +19,7 @@
 		207AA8AD2B221E3C00223342 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207AA8AC2B221E3C00223342 /* Preview Assets.xcassets */; };
 		2088C17C2B2258C0009194B3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C17B2B2258C0009194B3 /* CircleImage.swift */; };
 		2088C17E2B2259FB009194B3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C17D2B2259FB009194B3 /* MapView.swift */; };
+		20A309C02B3B3EF8001E0C98 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A309BF2B3B3EF8001E0C98 /* FavouriteButton.swift */; };
 		20F1BF812B2B6092009131DD /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1BF802B2B6092009131DD /* Parameters.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		207AA8AC2B221E3C00223342 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2088C17B2B2258C0009194B3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		2088C17D2B2259FB009194B3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		20A309BF2B3B3EF8001E0C98 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		20F1BF802B2B6092009131DD /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,12 +55,8 @@
 		2031CF242B235A6B001300A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2088C17D2B2259FB009194B3 /* MapView.swift */,
-				2088C17B2B2258C0009194B3 /* CircleImage.swift */,
-				207AA8A72B221E3B00223342 /* ContentView.swift */,
-				2031CF272B235B1C001300A5 /* RestaurantsRow.swift */,
-				204DB6EC2B24BF3D00CA9AFC /* RestaurantList.swift */,
-				204DB6EE2B24C42E00CA9AFC /* RestaurantDetail.swift */,
+				20A309C22B3B3FE8001E0C98 /* Helpers */,
+				20A309C12B3B3FDD001E0C98 /* Landmark */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +114,27 @@
 				207AA8AC2B221E3C00223342 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		20A309C12B3B3FDD001E0C98 /* Landmark */ = {
+			isa = PBXGroup;
+			children = (
+				207AA8A72B221E3B00223342 /* ContentView.swift */,
+				2031CF272B235B1C001300A5 /* RestaurantsRow.swift */,
+				204DB6EC2B24BF3D00CA9AFC /* RestaurantList.swift */,
+				204DB6EE2B24C42E00CA9AFC /* RestaurantDetail.swift */,
+			);
+			path = Landmark;
+			sourceTree = "<group>";
+		};
+		20A309C22B3B3FE8001E0C98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2088C17D2B2259FB009194B3 /* MapView.swift */,
+				2088C17B2B2258C0009194B3 /* CircleImage.swift */,
+				20A309BF2B3B3EF8001E0C98 /* FavouriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +214,7 @@
 				207AA8A62B221E3B00223342 /* KyivRestaurantsApp.swift in Sources */,
 				204DB6ED2B24BF3D00CA9AFC /* RestaurantList.swift in Sources */,
 				20F1BF812B2B6092009131DD /* Parameters.swift in Sources */,
+				20A309C02B3B3EF8001E0C98 /* FavouriteButton.swift in Sources */,
 				2088C17C2B2258C0009194B3 /* CircleImage.swift in Sources */,
 				204DB6EF2B24C42E00CA9AFC /* RestaurantDetail.swift in Sources */,
 				2031CF282B235B1C001300A5 /* RestaurantsRow.swift in Sources */,

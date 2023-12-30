@@ -10,10 +10,16 @@ import SwiftUI
 
 struct RestaurantDetail: View {
     
+    @Environment(ModelData.self) var modelData
     var restaurant: Restaurants
+    var restaurantIndex: Int {
+            modelData.restaurants.firstIndex(where: { $0.id == restaurant.id })!
+        }
     
     var body: some View {
         
+        @Bindable var modelData = modelData
+
         ScrollView(showsIndicators: false) {
                 MapView(coordinate: restaurant.locationCoordinate)
                     .frame(height: 300)
@@ -27,7 +33,8 @@ struct RestaurantDetail: View {
                     Text(restaurant.name)
                         .font(.title)
                         .bold()
-                    
+                    FavouriteButton(isSet: $modelData.restaurants[restaurantIndex].isFavorite)
+
                     Spacer()
                     
                     VStack(alignment: .trailing){
